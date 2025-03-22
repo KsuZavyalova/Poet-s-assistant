@@ -67,6 +67,61 @@ stress_model/
     variables.index
 
 ```
+<details>
+<summary><strong>Описание файлов и директорий</strong></summary>
+
+#### `poetrydict/`
+- **bad_signature1.dat**: Файл исключениями.
+- **collocation_accents.dat**: Файл с данными ударениях.
+
+#### `models/`
+- **seeds.pkl**: шаблоны для генерации поэзии.
+- **stressed_long_poetry_generator_medium/**: Директория с моделью GPT для генерации стихов.
+  - **archive/**: Архивные файлы модели.
+  - **config.json**: Конфигурация модели.
+  - **pytorch_model.bin**: Веса модели PyTorch.
+  - **tokenizer_config.json**: Конфигурация токенизатора.
+  - **vocab.txt**: Словарь токенизатора.
+- **udpipe_syntagrus.model**: Модель UDPipe для морфологического анализа текста.
+
+#### `py/`
+- **generative_poetry/**: Скрипты для генерации поэзии.
+- **arabize.py**: Скрипт для транслитерации текста.
+- **break_to_syllables.py**: Разделение текста на слоги.
+- **init_logging.py**: Настройка логирования.
+- **long_poem_generator2.py**: Генератор длинных стихотворений.
+- **metre_classifier.py**: Классификатор метра стихотворений.
+- **poetry_alignment.py**: Выравнивание текста по метрическим шаблонам.
+- **poetry_seeds.py**: Скрипт для работы с начальными данными (seeds).
+- **stressed_gpt_tokenizer.py**: Токенизатор для модели GPT с учетом ударений.
+- **temp_gpt_poetry_generation.py**: Скрипт для генерации стихов с использованием GPT.
+- **udpipe_parser.py**: Парсер для работы с моделью UDPipe.
+- **whitespace_normalization.py**: Нормализация пробелов в тексте.
+- **poetry/**: Поддиректория с модулями для фонетического анализа.
+  - **phonetic.py**: Фонетический анализ текста.
+- **transcriptor_models/**: Модели для транскрипции текста.
+  - **rusyllab.py**: Модуль для работы с русскими слогами.
+  - **stress_model.py**: Модель для определения ударений.
+
+#### `scripts/`
+- **config_tg.json**: Конфигурационный файл для Telegram-бота.
+- **poetery_tg.sh**: Скрипт для запуска Telegram-бота.
+- **poetry_bot.db**: База данных для хранения информации, связанной с ботом.
+- **requirements.txt**: Список зависимостей для установки.
+
+#### `tmp/`
+- **accents.pkl**: Файл с данными об ударениях.
+
+#### `stress_model/`
+- **nn_stress.cfg**: Конфигурация нейронной сети для определения ударений.
+- **nn_stress.model**: Модель нейронной сети для определения ударений.
+- **keras_metadata.pb**: Метаданные модели Keras.
+- **saved_model.pb**: Сохраненная модель TensorFlow.
+- **variables/**: Директория с переменными модели.
+  - **variables.data-00000-of-00001**: Данные переменных модели.
+  - **variables.index**: Индекс переменных модели.
+
+</details>
 
 ## Установка
 
