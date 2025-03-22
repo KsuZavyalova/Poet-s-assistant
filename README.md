@@ -93,10 +93,7 @@ stress_model/
 ### Telegram-бот
 Для запуска Telegram-бота:
 1. Отредактируйте файл `scripts/config_tg.json`, указав структуру вашего проекта.
-2. Запустите скрипт:
-   ```bash
-   bash scripts/poetery_tg.sh
-   ```
+2. Запустите скрипт poetery_tg.sh
 3. Введите токен бота в консоли.
    Получить его можно у @BotFather используя команду /newbot.
    <img width="1255" alt="Снимок экрана 2025-03-22 в 10 24 47" src="https://github.com/user-attachments/assets/0a90e2a7-494e-4539-b059-3bb094f82511" />
